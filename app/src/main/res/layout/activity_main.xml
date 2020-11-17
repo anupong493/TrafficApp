@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
+        android:id="@+id/livTraffic"
         android:layout_width="0dp"
         android:layout_height="350dp"
         android:layout_marginStart="32dp"
@@ -35,6 +36,7 @@
         android:id="@+id/button2"
         android:layout_width="204dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
         android:text="ABOUT ME"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,6 +50,7 @@
         android:id="@+id/button"
         android:layout_width="204dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
         android:text="MORE INFO"
         android:textStyle="bold"
         app:iconTint="#FFFFFF"

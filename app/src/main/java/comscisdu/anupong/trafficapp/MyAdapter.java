@@ -14,10 +14,10 @@ public class MyAdapter extends BaseAdapter {
     int[] ints; //ตัวแปรรูปicon
     String[] titleStrings, detailStrings;
 
-    public MyAdapter(Context context, int[] ints, String[] strings, String[] detailStrings) {
+    public MyAdapter(Context context, int[] ints, String[] titleStrings, String[] detailStrings) {
         this.context = context;
         this.ints = ints;
-        this.strings = strings;
+        this.titleStrings = titleStrings;
         this.detailStrings = detailStrings;
     }
 
@@ -40,7 +40,7 @@ public class MyAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {//นำข้อมูลที่นับจาก getCount() มาแสดงผล
 
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view1 = layoutInflater.inflate(R.layout.my_listview, ViewGroup, false); //ดึงค่า Xml มาแสดงผล
+        View view1 = layoutInflater.inflate(R.layout.my_listview, viewGroup, false); //ดึงค่า Xml มาแสดงผล
 
         //ผูกตัวแปรบน Java บนกับอิลิเมนต์บน Xml
         ImageView imageView = view1.findViewById(R.id.imvIcon);
