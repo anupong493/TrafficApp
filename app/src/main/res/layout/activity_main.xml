@@ -51,6 +51,7 @@
         android:layout_width="204dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
+        android:onClick="clickweb"
         android:text="MORE INFO"
         android:textStyle="bold"
         app:iconTint="#FFFFFF"
