@@ -37,6 +37,7 @@
         android:layout_width="204dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
+        android:onClick="linkAboutMe"
         android:text="ABOUT ME"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

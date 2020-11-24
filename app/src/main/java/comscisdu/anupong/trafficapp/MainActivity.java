@@ -57,7 +57,11 @@ public class MainActivity extends AppCompatActivity {
     }
     public void  clickweb(View view) {
         Intent webIntent = new Intent(Intent.ACTION_VIEW);
-        webIntent.setData(Uri.parse("https://www.dlt.go.th/th/%22"));
+        webIntent.setData(Uri.parse("https://www.dlt.go.th"));
         startActivity(webIntent);
+    }
+    public void linkAboutMe(View view){
+        Intent aboutmeintent = new Intent(MainActivity.this, AboutMe.class);
+        startActivity(aboutmeintent);
     }
 }
